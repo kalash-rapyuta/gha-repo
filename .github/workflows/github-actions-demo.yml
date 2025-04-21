@@ -10,3 +10,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Second job!?"
